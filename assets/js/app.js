@@ -78,8 +78,7 @@ if (sidebar.classList.contains('active')) {
 }
 
 window.addEventListener('resize', function() {
-    if (window.innerWidth < 767) {
-        console.log(true);
+    if (window.innerWidth < 992) {
         sidebar.classList.remove('active');
         mainContent.classList.add('expand');
         btnHambuger.classList.remove('open');
@@ -100,7 +99,7 @@ btnHambuger.addEventListener("click", function() {
 const typedText = document.querySelector(".header__text--effect .typed--text");
 const cursorText = document.querySelector(".header__text--effect .cursor--text");
 
-const textArray = ["Cong Nghia.", "Developer.", "love Front-end."];
+const textArray = ["Cong Nghia.", "a Programmer."];
 const typingDelay = 50;
 const erasingDelay = 50;
 const newTextDelay = 2000;

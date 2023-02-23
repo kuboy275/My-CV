@@ -270,7 +270,6 @@ li {
 }
 
 .sidebar__items li a i {
-    margin-right: 10px;
     width: 2rem;
     color: var(--black);
 }
@@ -751,6 +750,10 @@ li {
     font-size: 3rem;
 }
 
+.expertise__service--logo.bg-first i {
+    font-size: 5rem;
+}
+
 .expertise__service--logo::before {
     content: '';
     position: absolute;
@@ -823,11 +826,16 @@ li {
 .expertise__service--description {
     text-align: center;
     padding-top: 7rem;
+    /* height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
 .expertise__service--description h4 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
+    min-height: 4.6rem;
 }
 
 .expertise__service--description p {
@@ -1002,8 +1010,14 @@ li {
     margin-bottom: 3rem;
 }
 
-.work__tab--filter li {
+.work__tab--filter li:not(:last-child) {
     margin-right: 3rem;
+}
+
+@media (max-width:767px) {
+    .work__tab--filter li:not(:last-child) {
+        margin-right: 2rem;
+    }
 }
 
 .work__tab--filter li a {
